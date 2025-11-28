@@ -1,0 +1,6 @@
+.diveder::before .diveder::after {
+    content: "";
+    width: 40ox;
+    height: 1px;
+    background: #ccc;
+}
