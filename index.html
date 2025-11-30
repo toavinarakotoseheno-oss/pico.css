@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magintec</title>
+    <link rel="stylesheet" href="pico.green.min.css">
+</head>
+<style>
+    body{
+        display:-ms-flexbox;
+        flex-wrap: nowrap;
+        
+    }
+    header {
+        text-align: center;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .primary {
+        color: green;
+    }
+    .left {
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .message {
+        width: 400px;
+        height: 400px;
+    }
+    input{
+        background-color: white;
+        color: black;
+    }
+    .required{
+        color: gray;
+    }
+    .required:after {
+        content: " *";
+        color: red;
+    }
+    h5,h6,p{
+        color: white;
+    }
+
+    h6{
+        margin-bottom: 138px;
+    }
+
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .left {
+        flex: 1;
+        text-align: left;
+    }
+
+    .secondary {
+        flex: 1;
+        margin-top: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.Réservation {
+    padding: 32px 16px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-image: url(image2.png);
+}
+
+button {
+    width: auto;
+    max-width: 100%;
+}
+
+</style>
+
+<body>
+    <header>
+        <img src="logo.png" alt="" style="width: 200px;">
+        <nav class="nav" type="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Vehicules</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <map name="magintec"><img src="img 1.png" alt="localisation" style="width: 100%;"></map>
+
+        <article>
+            <h2>Location de voitures de sport</h2>
+            <p class="primary">Réservation par email: info@magintec.com</p>
+        </article>
+        <section class="submit">
+            <div class="grid">
+                <div class="left" type="submit">
+                    <h5>Envoyer un e-mail <br>_______________________________________________________</h5>
+                    <form>
+                        <label for="name" class="required">Nom</label>
+                        <input type="text" id="nom" name="nom"style="width: 50%;height: 40px;" >
+                        <label for="email" class="required">E-mail </label>
+                        <input type="email" id="email" name="email"style="width: 50%;height:40px;">
+                        <label for="number" class="required">Numéros de téléphone</label>
+                        <input type="number" style="width: 50%;height: 40px;">
+                        <label for="Message"class="required">Message </label>
+                        <input type="text" name="message" style="width: 90%;height: 200px;">
+                        <button class="btn">Envoyer</button>
+                    </form>
+                </div>
+                
+                    <article class="secondary">
+                        <img src="image 2.png" alt="">
+                        <h6>Duarrefstross 2<br>
+                            <p>9990 weiswampach(Luxembourg)</p>
+                        </h6>
+                        <img src="image3.png" alt="">
+                        <h6>Téléphone <br>
+                            <p>+352/691.105.854</p>
+                        </h6>
+                        <img src="image 4.png" alt="">
+                        <h6>Contact par Email
+                            <p>info @magintec.com</p>
+                        </h6>
+                    </article>
+                
+            </div>
+        </section>
+        <section class="Réservation">
+            <h5>COMMENT RESERVER UNE <br>
+                <h2>LOCATION DE VOITURE DE SPORT </h2>
+            </h5>
+            <P>Prenez contact par mail à <a href="mailto:info@magintec.com">info@magintec.com</a>ou via le formulaire de notre site.</P>
+            <button type="button">JE RESERVE MA VOITURE</button>
+        </section>
+        <footer>
+            <p>Magintec Sarl Duarrefstrooss 2,9990 weiswampach (Luxembourg) | Conditions générale de vente</p>
+        </footer>
+    </main>
+</body>
+
+</html>
